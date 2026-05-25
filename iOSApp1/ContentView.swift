@@ -1,24 +1,21 @@
-//
-//  ContentView.swift
-//  iOSApp1
-//
-//  Created by Brandon Naugler on 2026-05-21.
-//
 
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+  let menuItems = ["Coffee", "Tea", "Donut", "Blueberry Muffin"]
+  var body: some View {
+      TabView {
+          WelcomeView()
+          OrderView(orderName: "Order 1", menuItem: menuItems, storageKey: "order1Items")
+          OrderView(orderName: "Order 2", menuItem: menuItems, storageKey: "order2Items")
+          OrderView(orderName: "Order 3", menuItem: menuItems, storageKey: "order3Items")
+      }
+      .tabViewStyle(
+        PageTabViewStyle(indexDisplayMode: .never)
+      )
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

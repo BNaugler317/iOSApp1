@@ -10,9 +10,22 @@
 		DF0DCDC22FBF312000700B8A /* iOSApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DF0DCE222FBF4B1600700B8A /* Exceptions for "iOSApp1" folder in "iOSApp1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DF0DCDC12FBF312000700B8A /* iOSApp1 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DF0DCDC42FBF312000700B8A /* iOSApp1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DF0DCE222FBF4B1600700B8A /* Exceptions for "iOSApp1" folder in "iOSApp1" target */,
+			);
 			path = iOSApp1;
 			sourceTree = "<group>";
 		};
